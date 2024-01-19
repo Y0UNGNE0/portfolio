@@ -1,0 +1,338 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+
+  background-color: #ffffff;
+}
+
+.leftSection {
+  position: relative;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  align-self: baseline;
+}
+
+.image1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2; /* Ensure image1 appears on top */
+}
+
+.row {
+  display: flex;
+  background-image: url("BG-YELLOW.png");
+  background-size: cover;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 50%;
+}
+
+.col-8 {
+  flex: 8;
+}
+
+.col-4 {
+  flex: 3;
+}
+
+.leftSection img {
+  border-radius: 50%;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: black; /* Use rgba to set opacity */
+  z-index: -2; /* Set z-index lower than the image */
+}
+
+.skillset {
+  display: flex;
+
+  padding-right: 10px;
+  padding-top: 8px;
+}
+
+.disabled-button {
+  background-color: #fffceb;
+  border: none;
+  color: #000000;
+  padding: 9px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: not-allowed;
+  outline: 2px solid black;
+  border-radius: 4%;
+  margin-right: 10px;
+}
+
+.rowSection {
+  display: flex;
+  /* background-image: url("BG-YELLOW.png"); */
+  background-size: auto;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+}
+
+.smallFlex {
+  display: flex;
+}
+
+.pbFor-4 {
+  padding-bottom: 1.1rem;
+}
+
+.marginEducation {
+  margin-top: 46rem;
+}
+
+/* professional summary dots */
+
+.dot-div {
+  position: relative;
+}
+
+.dot-div::after {
+  content: "\00B7";
+  color: #808080;
+  position: absolute;
+  top: -15px;
+  right: 185px;
+  font-size: 90px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .dot-div-front {
+  position: relative;
+} */
+
+/* work dots */
+
+.dot-div-work {
+  position: relative;
+}
+.dot-div-work::after {
+  content: "\00B7";
+  color: #808080;
+  position: absolute;
+
+  font-size: 90px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 126px;
+  margin-bottom: 20px;
+  left: -7px;
+}
+
+.dot-div-work2 {
+  position: relative;
+}
+.dot-div-work2::after {
+  content: "\00B7";
+  color: #808080;
+  position: absolute;
+  top: -78px;
+  right: 777px;
+  font-size: 90px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot-div-work3 {
+  position: relative;
+}
+.dot-div-work3::after {
+  content: "\00B7";
+  color: #808080;
+  position: absolute;
+  top: 203px;
+  right: 777px;
+  font-size: 90px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* project dots */
+
+.dot-div-proj {
+  position: relative;
+}
+.dot-div-proj::after {
+  content: "\00B7";
+  color: #808080;
+  position: absolute;
+  top: -11px;
+  /* right: 758px; */
+  font-size: 90px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -7px;
+}
+
+.dot-div-proj2 {
+  position: relative;
+}
+.dot-div-proj2::after {
+  content: "\00B7";
+  color: #808080;
+  position: absolute;
+  top: -18px;
+  right: 777px;
+  font-size: 90px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot-div-proj3 {
+  position: relative;
+}
+.dot-div-proj3::after {
+  content: "\00B7";
+  color: #808080;
+  position: absolute;
+  top: -10px;
+  /* right: 777px; */
+  font-size: 90px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -7px;
+  padding-bottom: 121px;
+}
+.dot-div-proj4 {
+  position: relative;
+}
+.dot-div-proj4::after {
+  content: "\00B7";
+  color: #808080;
+  position: absolute;
+  top: -9px;
+  right: 777px;
+  font-size: 90px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot-div-proj5 {
+  position: relative;
+}
+.dot-div-proj5::after {
+  content: "\00B7";
+  color: #808080;
+  position: absolute;
+  top: 170px;
+  right: 777px;
+  font-size: 90px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot-div-proj6 {
+  position: relative;
+}
+.dot-div-proj6::after {
+  content: "\00B7";
+  color: #808080;
+  position: absolute;
+  top: -20px;
+  right: 777px;
+  font-size: 90px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* educations dots */
+.dot-div-edu {
+  position: relative;
+}
+.dot-div-edu::after {
+  content: "\00B7";
+  color: #808080;
+  position: absolute;
+  top: -15px;
+  right: 623px;
+  font-size: 90px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot-div-edu2 {
+  position: relative;
+}
+.dot-div-edu2::after {
+  content: "\00B7";
+  color: #808080;
+  position: absolute;
+  top: 25px;
+  right: 940px;
+  font-size: 90px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
